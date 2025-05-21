@@ -762,23 +762,23 @@
                 <span class="highlight-text">◆ハンド◆</span>
             </div>
             <div class="symptoms">
-                <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">ワンカラー</button>
-                <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">ラメグラデーション</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">【ハンド】ワンカラー</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">【ハンド】ラメグラデーション</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">マグネットジェル</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">定額サンプルA</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">定額サンプルB</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">定額サンプルC</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">カラーグラデーション</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">フレンチネイル</button>
-                <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">アートし放題</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="ハンド" data-price="15000">【ハンド】アートし放題</button>
             </div>
             <div class="highlight-background">
                 <span class="highlight-text">オプション</span>
             </div>
             <div class="irradiations">
-                <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="15000">オプション：自店オフ</button>
-                <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="15000">オプション：他店オフ</button>
-                <button type="button" id="sanirradiations" onclick="selectirradiations(this)" data-price="15000">オプション：亀裂矯正</button>
+                <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="15000">ハンドオプション：自店オフ</button>
+                <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="15000">ハンドオプション：他店オフ</button>
+                <button type="button" id="sanirradiations" onclick="selectirradiations(this)" data-price="15000">ハンドオプション：亀裂矯正</button>
             </div>
         </div>
 
@@ -787,19 +787,19 @@
                 <span class="highlight-text">◆フット◆</span>
             </div>
             <div class="symptoms">
-                <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">ワンカラー</button>
-                <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">ラメグラデーション</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">【フット】ワンカラー</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">【フット】ラメグラデーション</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">サンプルA</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">サンプルB</button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">親指アート</button>
-                <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">アートし放題.</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="フット" data-price="15000">【フット】アートし放題.</button>
             </div>
             <div class="highlight-background">
                 <span class="highlight-text">オプション</span>
             </div>
             <div class="irradiations">
-                <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="15000">オプション：自店オフ</button>
-                <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="15000">オプション：他店オフ</button>
+                <button type="button" id="firstirradiations" onclick="selectirradiations(this)" data-price="15000">フットオプション：自店オフ</button>
+                <button type="button" id="repeatirradiations" onclick="selectirradiations(this)" data-price="15000">フットオプション：他店オフ</button>
             </div>
         </div>
 
@@ -817,8 +817,8 @@
                 <span class="highlight-text">◆オフのみ◆</span>
             </div>
             <div class="symptoms">
-                <button type="button" onclick="selectSymptom(this)" data-category="オフのみ" data-price="15000">オプション：自店オフ</button>
-                <button type="button" onclick="selectSymptom(this)" data-category="オフのみ" data-price="15000">オプション：他店オフ</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="オフのみ" data-price="15000">自店オフ</button>
+                <button type="button" onclick="selectSymptom(this)" data-category="オフのみ" data-price="15000">他店オフ</button>
             </div>
         </div>
 
@@ -910,23 +910,28 @@
 
         // 訪問回数ごとの時間設定 (例：初めて=20分、2回目以降=15分)
         let irradiationsTimes = {
-            '自店オフ': 30,
-            '他店オフ': 30,
-            '亀裂矯正': 20
+            'ハンドオプション：自店オフ': 30,
+            'ハンドオプション：他店オフ': 30,
+            'フットオプション：自店オフ': 30,
+            'フットオプション：他店オフ': 30,
+            'ハンドオプション：亀裂矯正': 20
         };
 
         let selectedirradiationsTime = 0; // 訪問回数で選択された時間
 
         let menuTimes = {
-            'ワンカラー': 60,
-            'ラメグラデーション': 60,
+            '【ハンド】ワンカラー': 60,
+            '【ハンド】ラメグラデーション': 60,
+            '【フット】ワンカラー': 60,
+            '【フット】ラメグラデーション': 60,
             'マグネットジェル': 60,
             '定額サンプルA': 60,
             '定額サンプルB': 90,
             '定額サンプルC': 90,
             'カラーグラデーション': 90,
             'フレンチネイル': 90,
-            'アートし放題': 90,
+            '【ハンド】アートし放題': 90,
+            '【フット】アートし放題': 90,
             'サンプルA': 60,
             'サンプルB': 90,
             '親指アート': 90,
